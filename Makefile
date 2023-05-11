@@ -13,12 +13,6 @@ depend:
 		(echo depend in $$i...; cd $$i; $(MAKE) depend);\
 	done;
 
-depend:
-	@for i in $(DIRS); \
-	do \
-		(echo depend in $$i...; cd $$i; $(MAKE) depend);\
-	done;
-
 clean:
 	$(RM) $(RM_OPTIONS) $(TIDY_OPTIONS)
 	@for i in $(DIRS); \
