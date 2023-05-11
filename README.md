@@ -24,7 +24,7 @@ Development has been paused at the moment, so the software is somewhat alpha in 
 
 # Running the test programs
 
-The current C layer authentication scheme just uses the default-application authentication mechanism. More complex authentuication could be provided by wrapping other Client constructors.
+The current C layer authentication scheme just uses the default-application authentication mechanism. More complex authentication could be provided by wrapping other Client constructors.
 
 Therefore:
 

@@ -317,6 +317,6 @@ void GCP_Client_Read_Write_Error_String(char *error_string)
 	** without there being an error to display */
 	if(Read_Write_Error_Number == 0)
 		sprintf(Read_Write_Error_String,"Logic Error:No Error defined");
-	sprintf(error_string+strlen(error_string),"%s GCP_Client_Connection:Error(%d) : %s\n",time_string,
+	sprintf(error_string+strlen(error_string),"%s GCP_Client_Read_Write:Error(%d) : %s\n",time_string,
 		Read_Write_Error_Number,Read_Write_Error_String);
 }

@@ -1,7 +1,7 @@
 /* test_put_file.c
 */
 /**
- * Test the Google Cloud Services client connection routine.
+ * Test putting a local file into the Google Cloud.
  * @author Chris Mottram
  * @version $Revision$
  */
@@ -58,7 +58,7 @@ static void Help(void);
  * <li>We parse the arguments with Parse_Arguments.
  * <li>We setup the GCP_Client library logging.
  * <li>We connect to the google cloud by calling GCP_Client_Connection_Open.
- * <li>We load the contents of the local file into memory.
+ * <li>We load the contents of the local file into memory (Load_File).
  * <li>We put the local file contents into the specified google cloud filename in the specified google bucket (GCP_Client_Read_Write_Write).
  * </ul>
  * @param argc The number of arguments to the program.
@@ -68,7 +68,7 @@ static void Help(void);
  * @see #Bucket_Name
  * @see #Google_Filename
  * @see #Local_Filename
- * @see #Save_File
+ * @see #Load_File
  * @see ../cdocs/gcp_client_connection.html#GCP_Client_Connection_Open
  * @see ../cdocs/gcp_client_general.html#GCP_Client_General_Set_Log_Filter_Level
  * @see ../cdocs/gcp_client_general.html#GCP_Client_General_Set_Log_Filter_Function
@@ -279,7 +279,7 @@ static int Parse_Arguments(int argc, char *argv[])
  */
 static void Help(void)
 {
-	fprintf(stdout,"Test Connection:Help.\n");
+	fprintf(stdout,"Test Put File:Help.\n");
 	fprintf(stdout,"This program puts a local file into google cloud storage.\n");
 	fprintf(stdout,"test_put_file -b[ucket] <bucket name> -g[oogle_filename] <filename>\n");
 	fprintf(stdout,"\t-i[nput_filename] <filename>[-help][-l[og_level <0..5>].\n");

@@ -1,7 +1,7 @@
 /* test_get_file.c
 */
 /**
- * Test the Google Cloud Services client connection routine.
+ * Test retrieving a file from Google Cloud Services.
  * @author Chris Mottram
  * @version $Revision$
  */
@@ -53,7 +53,7 @@ static void Help(void);
  * <li>We setup the GCP_Client library logging.
  * <li>We connect to the google cloud by calling GCP_Client_Connection_Open.
  * <li>We read the specified google file from the specified google bucket into memory (GCP_Client_Read_Write_Read).
- * <li>We save the read data into the specified local filename.
+ * <li>We save the read data into the specified local filename (Save_File).
  * </ul>
  * @param argc The number of arguments to the program.
  * @param argv An array of argument strings.
@@ -247,7 +247,7 @@ static int Parse_Arguments(int argc, char *argv[])
  */
 static void Help(void)
 {
-	fprintf(stdout,"Test Connection:Help.\n");
+	fprintf(stdout,"Test Get File:Help.\n");
 	fprintf(stdout,"This program calls downloads a file from google cloud storage and saves it locally.\n");
 	fprintf(stdout,"test_get_file -b[ucket] <bucket name> -g[oogle_filename] <filename>\n");
 	fprintf(stdout,"\t-o[utput_filename] <filename>[-help][-l[og_level <0..5>].\n");
