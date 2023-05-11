@@ -1,0 +1,12 @@
+GCP_CLIENT_HOME     = gcp_client
+GCP_CLIENT_SRC_HOME = $(LT_SRC_HOME)/$(GCP_CLIENT_HOME)
+GCP_CLIENT_BIN_HOME = $(LT_BIN_HOME)/$(GCP_CLIENT_HOME)
+GCP_CLIENT_DOC_HOME = $(LT_DOC_HOME)/$(GCP_CLIENT_HOME)
+
+GCP_CLIENT_LIBNAME = $(GCP_CLIENT_HOME)
+
+# log_udp library (log_udp.h is included for verbosity settings)
+LOG_UDP_HOME		= log_udp
+LOG_UDP_SRC_HOME	= $(LT_SRC_HOME)/$(LOG_UDP_HOME)
+LOG_UDP_CFLAGS		= -I$(LOG_UDP_SRC_HOME)/include
+
